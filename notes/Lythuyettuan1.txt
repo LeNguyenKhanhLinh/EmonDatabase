@@ -1,0 +1,9 @@
+- show databases sẽ thấy hết databases
+- show tables from [tên db] sẽ thấy hết các tables trong database
+- create table bình thường  báo lỗi nếu bảng đã tồn tại
+- create table if not exist sẽ thông báo bảng đã tồn tại và không tạo bảng mới những không báo lỗii
+- insert into [ten bang] (trong Th có cột sau tên bảng thì các dự liệu phía sau sẽ được nhập vào các cột đó. Nếu không, các dữ liệu phía sau sẽ điền đầy đủ các cột trong bảng.
+- Lưu ý về các dữ liệu phía sau (nhập string hoặc ngày tháng nhớ để trong ngoặc đơn:v)
+- insert ignore để insert những không them những nội dung primary key đã bị trùng (data mới có primary giống cái đã có sẵn -> bỏ qua data đó và insert cái data tiếp theo vào)
+- limit để giới ạn số lượng các hang ma select trả về. 
+- limit [vị trí bắt đầu],[số lượng dòng lấy]. nếu không điền vị trí bắt đầu thì mặc định lấy từ đầu

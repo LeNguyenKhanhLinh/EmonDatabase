@@ -1,0 +1,11 @@
+- lệnh rename table [tên cũ] sang [tên mới]
+- Lệnh alter table [tên bảng] để thay đổi bản
+sau đó them các lệnh thay đổi như 
+add [khai báo như khai báo cột lúc tạo]
+drop [tên cột/primary key/ foreign key]: xoá cột
+change [tên cũ] [tên mới] [kiểu dữ liệu]: đổi tên cột
+modify [tên cột] [kiểu dữ liệu mới]: đổi kiểu dữ liệu cột
+add contrain[tên cột] (sau đó xuống dòng và them các ràng buộc): them ràng buộc cho cột
+add index [tên index]([tên cột]): them index và chắc là drop thì ngược lại?
+- muốn add cột mới lên đầu, them chữ 'first' sau dòng add cột
+- nếu muốn add cột mới sau một cột cụ thể, them dòng 'after [cột mốc]' sau dòng add cột

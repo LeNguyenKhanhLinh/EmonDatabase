@@ -1,0 +1,33 @@
+- Khi khai báo các cột bên trong tên bảng, dùng dấu ngoặc tròn. Ví dụ: create table if not exists bang();
+- Các từ khoá đầy đủ khi khai báo biến trong MySQL:
+loại		từ khoá khai báo
+số nguyên	int
+số thực		float, double có dạng khai báo kiểu float(a,b) và double(a,b) 		tức khai báo tối đa a chữ số, b chữ số sau dấu phẩy
+		nên dùng decimal để tránh lỗi khi xử lí decimal(a,b) tượng tự 
+
+text		text (lưu ngoài row, row chỉ chứa pointer, không cần khai báo 		độ dài, không thể sử dụng vs default (đật giá trị làm giá trị 		mặc định
+chuỗi		varchar(a) varchar có oộ dài tối đa a, có thể sử dụng với 		default
+thời gian	date (yyyy-mm-dd), time (giờ), datetime(ngày+giờ), year (năm)
+
+tập giá trị	Enum([danh sách các giá trị]): cái này chỉ được chọn 1 giá trị
+		set([danh sách các giá trị]): có thể chọn đc nhiều giá trị
+- Lệnh like trong "create table dup_countries like countries" để tạo bảng dup_countries giống với structure của bảng countries
+LIKE LIKE LIKE LIKE LIKE 
+- Lệnh create table có thể copy cả structure lẫn data trong 1 table mẫu khi select tất cả trong table mẫu.
+Ví dụ: Create table dupcountries 
+	Select * from countries
+SELECT TẤT CẢ ĐỂ TẠO TABLE MỚI CÓ ĐỦ DATA SELECT TẤT CẢ ĐỂ TẠO TABLE MỚI CÓ ĐỦ DATA SELECT TẤT CẢ ĐỂ TẠO TABLE MỚI CÓ ĐỦ DATA
+- Trong MySQL để trống thì có thể để dữ liệu NULL. thích thì them chữ NULL vào cho vui. Khi không cho phép để trống ô thì khi khai báo dữ liệu, khai báo them "NOT NULL" sau khi khai báo kiểu dữ liệu
+- lệnh check để kiểm tra điều kiến nhập của các thành phần được khai báo có Đạt đúng tiêu chuẩn không. ví dụ:
+check(salary>25000), check(salary between 110 and 300),check(salary in(114,356,120) Khi xét nhiều thành phần khác nhau, có thể dùng nhiều check :v
+CHECK CHECK CHECK CHECK CHECK
+- exists có s exists có s exists có s exists có s exists có s exists có s 
+- In thì là giá trị trong dấu {} trong toán (lấy 1 phần tử trong tập hợp), còn between and thì lấy giá trị trong dải số đó
+- UNIQUE UNIQUE UNIQUE UNIQUE UNIQUE
+- KHÔNG DÙNG DEFAULT VỚI TEXT KHÔNG DÙNG DEFAULT VỚI TEXT KHÔNG DÙNG DEFAULT VỚI TEXT
+- auto_increment  để tự insert dữ liệu mà không cần phải nhập (kiểu không cần ghi 1 2 3 mà cứ nhập các dữ liệu khác nó sẽ tự đem về 1 2 3 í. dùng sau khi khai báo kiểu dữ liệu, trước 'unique' hoặc 'primary key'
+- Foreign key tạo mối quan hệ giữa 2 bảng. 
+cú pháp: 
+foreign key ([tên key])
+references [tên bảng gốc]([tên key])
+- REFERENCES CÓ S REFERENCES CÓ S REFERENCES CÓ S

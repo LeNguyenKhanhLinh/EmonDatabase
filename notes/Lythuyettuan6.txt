@@ -1,0 +1,16 @@
+- Nếu có nhiều hơn 1 điều kiến cho lệnh where, sử dụng cấu trúc and để nối
+- Để lấy và sử dụng thành phần year/month/day bên trong 1 tập dữ liệu kiểu date, dùng các lệnh year([tên cột]), month(), day()
+- Lệnh like để toán tử so khớp chuỗi với mẫu. 
+Ví dụ: chuỗi bắt đầu bằng 1 ký tự: where [tên cột chứa chuỗi] like '[kỹ tự]%'
+Ví dụ: where first_name like 'A%'
++ kết thức bằng 1 kí tự: '%[ký tự]'
++ chứa 1 ký tự không quan tâm vị trí '%[ký tự]%'
++ Ký tự _ là 1 ký tự bất kỳ: ví dụ: chuỗi có 1 ký tự A đứng thứ 3: '__A%'
+DÙNG NGOẶC ĐƠN DÙNG NGOẶC ĐƠN DÙNG NGOẶC ĐƠN
++ lệnh join: khi gọi lệnh join, cú pháp
+from [tên bảng 1] [bí danh bảng 1]
+join [tên bảng 2] [bí danh bảng 2]
+on [bí danh bảng 1].[tên cột] = [bí danh bảng 2].[tên cột]
+- khi lệnh join không thế này thì mặc định là dùng inner join (chỉ lấy những cột có cả 2 giá trị khác null)
+- left join thì lấy tất cả bên trái (bên phải có thể null)
+- right join thì lấy tất ả bên phải (bên trái có thể null)

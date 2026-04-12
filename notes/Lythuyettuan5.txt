@@ -1,0 +1,20 @@
+- lệnh distinct đặt ngay sau select và ngay trước t tên cột
+NHỚ VỊ TRÍ DISTINCT NHỚ VỊ TRÍ DISTINCT NHỚ VỊ TRÍ DISTINCT
+- lệnh order by ngay sau lệnh select from để sắp xếp thức tự theo 1 thứ tự nhất định desc(giảm dần), asc(tăng dần)
+cú pháp: 
+order by [dữ liệu làm mốc sắp xếp] desc
+- select [hoạt động so vs cột đã pick] as [tên cột mới]: cho dữ liệu đã được xử lí (hoặc k) từ cột bốc đc vào thành 1 cột mới đc đặt tên
+- sum([tên cột chứa giá trị]): tổng các giá trị trong cột đó
+- min(): giá trị bé nhất trong số các giá trị của cột đó
+- max(): ngược lại của cái trên
+- avg(): giá trị trung bình cảu các gtri cột đó
+- count(): đếm số giá trị của cột đó
+- count(distinct [tên cột]): đếm số giá trị khác nhau của cột đó
+- upper(): đưa chữ trong đó lên chữ hoa hết
+- lower(): dưa chữ trong đó về chữ thườngg hết
+- substring([tên cột],[điểm bắt đầu(tính từ 1)], [số lượng ký tự lấy]): lấy 1 số ký tự từ string trong cột
+- select [thức hiện 1 phép tình nào đó] as [tên ô muốn trả kết quả ra]: thực hiện phép  
+- concat([tên cột 1],[ký tự nối],[tên cột 2]): ghép nối nội dung 2 cột vô với nhau
+- trim(): xóa dấu cách 2 đầu nội dung
+- length([tên cột/nội dung]): chiều dài nội dung
+- round([giá trị],[số chữ sau dấu phẩy muốn làm tròn): làm tròn giá trị
